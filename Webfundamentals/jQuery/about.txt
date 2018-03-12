@@ -1,0 +1,3 @@
+This folder is dedicated to jQuery implementation. jQuery functions is an excellent assignment that will implement common used functions with jQuery. All following assignments are practice using jQuery.
+
+ADVANCED JQUERY IMPLEMENTS ADVANCED FUNCTIONALITY OF JQUERY - GREAT TO GO BACK TO WHEN USING JQUERY

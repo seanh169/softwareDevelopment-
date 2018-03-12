@@ -1,0 +1,5 @@
+This section is dedicated to Javascript basics and practice. Reiterating some of the basics of Javascript and how to ineract with the front end. This section has examples, fundamentals, charts, and hard coded assignments.
+
+
+
+ASSIGNMENTS ARE BROKEN DOWN INTO LAYERS - FUNDAMENTALS 1 AND 2 , ARRAYS, AND THE DOM. THESE ASSIGNMENTS SHOULD BE REVISITED AND ANYONE SHOULD BE ABLE TO DO THEM VERY QUICKLY IF THEY HAVE A GOOD FUNDAMENTAL UNDERSTANDING OF FUNCTIONAL PROGRAMMING.

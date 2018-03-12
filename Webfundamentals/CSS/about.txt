@@ -1,0 +1,8 @@
+This folder/section is dedicated to CSS fundamentals. Great information to come back to strengthen/build fundamental skills in CSS. There are practice assignments, info charts, examples, and hard coded designs.
+
+
+IMPORTANT ASSIGNMENTS 
+
+- PLOTTING YOUR BLOCKS. BUILDS FUNDAMENTALS OF DESIGN USING CSS. BLOCK METHOD OF DESIGN USING DIVS - NEW STANDARD.
+-Sean_Hamilton_portfolio.zip, Sean_Hamilton_pythons.zip, Sean_Hamilton_internet.zip ARE ALL IMPORTANT ASSIGNMENTS USING BLOCK METHOD TO REPLICATE THE DESIGN OF THE GIVEN WEBSITES. EVERYTHING HARD CODED IN CSS.
+

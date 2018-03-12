@@ -1,0 +1,12 @@
+This section is for implementing and leanring fundamental OOP concepts using the PYTHON Language! 
+
+<b>These assignments include practice using OOP class structure, Attributes and Methods, Self and Init, Chaining Methods</b>
+1.Bike
+2.Car
+3.Product
+
+<b> Assignments include practice using Modules & Packages, Inheritance, Super, Multiple Arguments, User</b>
+4. Animal
+5. Math Dojo
+6. Call Center
+7. Hospital

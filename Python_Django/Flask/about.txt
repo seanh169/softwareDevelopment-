@@ -1,0 +1,25 @@
+This section is about Flask! Although Django will be my primary framework, learning Fundamentals of Flask has always helped me understand the entire client/server interaction
+
+<b>Flask Fundamentals</b>
+<i>These assignments, done in order, utilize the fundamentals of using a virutal enviroment, first program to get to display to a page, flask installation, and basic routes</i>
+
+1. Hello World
+2. Portfolio
+
+<i>implementing HTTP Methods, More Routing, Advanced Routing, Views, Templates, Static Files, Session, Hidden Inputs</i>
+
+3. Landing Page
+4. Whats My Name
+5. Dojo Survey
+6. Disappearing Ninja
+
+<i>implemetning Sessions, Hidden Inputs</i>
+
+7. Counter
+8. Great Number Game
+9. Ninja Gold
+
+<i>implementing Basic and Advanced form validation</i>
+
+10. Dojo Survey with Validation
+11. Registration Form

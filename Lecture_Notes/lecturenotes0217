@@ -1,0 +1,16 @@
+NEW DATA STRUCTURES
+
+QUEQUE- FIFO FIRST IN FIRST OUT
+
+STACK - LAST IN LAST OUT
+
+
+LECTURE NOTES 2
+
+
+Becrypt
+pip install bcrypt
+
+import bcrypt
+
+hash = bcrypt.hashpw('Test1234'.encode(), bcrypt.gensalt)

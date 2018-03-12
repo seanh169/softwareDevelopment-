@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>show page</title>
+</head>
+<body>
+<a href='/travels'>Home</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/logout'>Logout</a><br><br>
+	<strong>Travel Destination</strong> : <i>{{travel.destination}}</i> <br>
+	<strong>Description</strong> : {{travel.desc}}<br>
+	<strong>travel Date From</strong> : {{travel.startdate}}<br>
+	<strong>travel Date To</strong> : {{travel.enddate}}<br>
+
+
+<h3>Other Users going on trip</h3>
+   			{%for user in others%}
+            <h5> {{user.name}}</h5>
+           	{%endfor%}
+          	<br>
+            
+{%for user in others%}
+{{user.first_name}} 
+{%endfor%}
+
+
+</body>
+</html>

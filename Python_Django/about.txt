@@ -1,0 +1,9 @@
+This section is for the PYTHON Language! 
+Includes:
+1. Python Fundamentals - Syntax, Conventions, Best Pracitces
+2. Python OOP - OOP practice using the python language. OOP fundamentals.
+3. Flask - Flask fundamentals and practice
+4. MySql - Database integration , fundamentals, how to Query, SQL language. 
+5. Adding SQL - FLask - Full built applications using Flask Framework inegrated with SQL Databse.
+6. Django - Fundamentals, practice, implementation, full built applications using Django framework and SQLLite Databse.
+7. Deployment

@@ -1,0 +1,34 @@
+//DJANGO notes
+//lecture 02/20/2018 
+
+What is the advantage of modularization?
+
+makes it easier to find what you want to work with
+
+
+
+What is an MVC framework? What are its advantages?
+
+Model View Controller - type of architecture for creating programs
+
+Model - Connects to database
+View - What we display to our user
+Controller - logic of what to display or what to save to DataBase
+
+
+
+
+What is MTV (hint not music television)?
+
+Models Templates Views
+
+Models- connects to Database
+Templates - What we display to our user
+Views - logic of what to display
+
+
+
+What are the roles of the following files in a Django project: urls.py, models.py, views.py FOR MTV?
+urls.py - routing
+models.py - database
+views.py - 

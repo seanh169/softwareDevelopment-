@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="users" content="users">
+		<link rel="stylesheet" type="text/css" href="pokemon.css">
+		<title>pokemon</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+        $(document).ready(function(){
+        	$(".submit").click(function(){
+        		for(var i = 1; i < 152; i++){
+        			$('.home').append("<img src=http://pokeapi.co/media/img/" + i + ".png>");
+        		}
+        	});
+        
+
+        });
+
+        </script>
+	</head>
+	<body>
+		<!-- <img src="http://pokeapi.co/media/img/1.png" class="picture"> -->
+		<div class="home"></div>
+		<button class="submit">Submit</button>
+	</body>
+</html>

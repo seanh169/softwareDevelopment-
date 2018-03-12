@@ -1,0 +1,17 @@
+Assignments completed in this order:
+1.Strings and Lists
+2. Multiples, Sum, and Average
+3.Filter by Type
+4.Type List
+5.Comparing Lists
+6.Finding Characters
+7.Checkerboard
+------------------
+8.Fun with Functions
+9. Scores and Grades
+10. COin Tosses
+11. Stars
+12. Dictionary Basics
+13. Names
+14. Making Tuples
+15. Lists to Dict

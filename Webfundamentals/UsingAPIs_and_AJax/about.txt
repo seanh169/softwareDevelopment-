@@ -1,0 +1,1 @@
+This section shows a great POKEMON assignment of implementing Ajax and API's using JSON data.

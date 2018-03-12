@@ -1,0 +1,9 @@
+Overview
+Adding a database to your application is very simple, but extremely powerful. We've seen how we can get information posted from a form, validate the information to make sure it contains the proper information, display flash messages, and set some session variables. Now we are going to show you how you can put that information into your database and use session variables to log a user in! With the database in the mix, we can now start to make our content dynamically change based on a particular user or condition. This is where the fun begins! In this chapter we will cover the following:
+
+Connecting to MySQL
+Learn how to Import and Export MySQL Database
+Including files
+Database Communication
+Login and Registration
+MySQL Injection

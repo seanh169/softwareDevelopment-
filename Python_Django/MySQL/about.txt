@@ -1,0 +1,12 @@
+This section is directly related to database fundamentals, implementation, and setup using MYSQL. First assignments are very important implementing all the different relationships , workbench, conventions, Data Types.
+1.Books
+2.Blogs
+3.User Dashboard
+
+<i> These assignments implement MYSQL queries including imports, CRUD, JOINS, LEFT JOINS, EXPORTS
+
+1.MySql Workbench Setup
+2.My SQL Countries
+3.Sakila
+4.Friendships
+5. Lead Gen Business

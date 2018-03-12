@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>add a plan</title>
+</head>
+<body>
+	<a href='/travels'>Home</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/logout'>Logout</a>
+	<h1> Add a Trip</h1>
+	<form action='/create' method='post'>
+		{% csrf_token %}
+		<input = 'text' name = 'destination' placeholder='Destination...'><br><br>
+		<textarea name ='description' rows='5' placeholder='description...'></textarea><br><br>
+		Travel Start Date:<input type= 'date' name='startdate'><br><br>
+		Travel End Date: <input type= 'date' name='lastdate'><br><br>
+		<input type='submit' value='Add'>
+	</form>
+	{% if messages %}
+		{% for message in messages %}
+			{{ message }}<br>
+		{% endfor %}
+	{% endif %}	
+</body>
+</html>
