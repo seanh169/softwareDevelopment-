@@ -46,14 +46,11 @@ public class Node {
 			runner = runner.next;
 		}
 	}
-	public void main(int[] args) {
-		
+	
+	
+	
+	
+	
+	
 	}
-	
-	
-	
-	
-	
-	
-}
 }

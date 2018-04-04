@@ -50,4 +50,22 @@ class LinkList {
 		firstLink = newLink; 
 	}
 	
+	
+	public Node removeFirst() {
+		
+		Node linkReference = firstLink;
+		if(!isEmpty()) {
+			firstLink = firstLink.next;
+			
+			
+		} else
+		
+	}
+	
+	
+	
+	
+	
+	
+	
 }
