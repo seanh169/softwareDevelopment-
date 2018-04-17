@@ -51,14 +51,7 @@ class LinkList {
 	}
 	
 	
-	public Node removeFirst() {
-		
-		Node linkReference = firstLink;
-		if(!isEmpty()) {
-			firstLink = firstLink.next;
-			
-			
-		} else
+	
 		
 	}
 	
@@ -68,4 +61,3 @@ class LinkList {
 	
 	
 	
-}
