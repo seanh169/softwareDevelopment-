@@ -1,0 +1,246 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	/*outline:1px solid red;*/ 
+
+}
+
+.wrapper {
+	padding: 10px;
+}
+
+.header img {
+	width: 80px;
+	height: 90px;
+	margin-right: 20px;
+	position: relative;
+	top: 20px;
+	right: -10px;
+}
+.header span {
+	font-size: 40px;
+	position: relative;
+	left: -4px;
+	bottom: -4px;
+	margin-top: 36px;
+}
+.worldwideweb {
+	background-color:#4c7fab;
+	display: block;
+	color: #f9fbfc;
+	font-size: 40px;
+	padding: 10px;
+	
+}
+
+.header {
+	display:flex;
+}
+
+.net {
+	color: #1a69b2;
+}
+.body {
+	background-color:#f9fbfc;
+}
+.leftsidenav {
+
+	width: 204px;
+	margin-top: 20px;
+
+
+}
+.leftsidetext, .internetred {
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #eeeeee;
+	padding-bottom: 30px;
+
+}
+.internetred {
+	color: #db3933;
+
+}
+.adbackground {
+	width: 160px;
+	height: 233px;
+	margin-left: 20px;
+}
+.videobutton, .resourcebutton {
+	width: 160px;
+	height: 30px;
+	margin-left: 20px;
+}
+.videobutton {
+	margin-top: 40px;
+}
+.resourcebutton {
+	margin-bottom: 20px;
+	border-bottom: 2px solid black;
+	padding-bottom: 20px;
+}
+.workofcomputers, .interblue, .interconnectedtext, .connectedblack, .netblue {
+	position:relative;
+	top: 20px;
+	font-weight: bold;
+	background-color: #eeeeee;
+}
+.interblue, .netblue {
+	color: #3773a6;
+}
+.leftsidenav h2 {
+	color: white;
+	text-align: center;
+	position: relative;
+	left: 20px;
+	font-weight: normal;
+	bottom: 216px;
+	font-size: 23px;
+	width: 159px;
+}
+.ninjapic {
+	width: 65px;
+	height: 80px;
+	position: relative;
+	left: 65px;
+	bottom: 215px;
+}
+.learnbutton {
+	width: 130px;
+	height: 25px;
+	position: relative;
+	right: 34px;
+	bottom: 175px;
+}
+
+.topcontact {
+	width: 578px;
+	height: 50px;
+	display: flex;
+	background-color: #eeeeee;
+	position:relative;
+	left: 212px;
+	bottom: 645px;
+	
+}
+.homeimg {
+	width:10px;
+	height:10px;
+}
+.phoneicon {
+	width: 35px;
+	height: 35px;
+	position: relative;
+	left: 345px;
+	top: 10px;
+}
+.hours, .phonesmall {
+	font-size: 10px;
+}
+.hours {
+	position: relative;
+	right: -370px;
+}
+.phoneblue {
+	font-size: 26px;
+	color: #03c0df;
+	font-weight: bold;
+	position: relative;
+	right: -234px;
+	top: 13px;
+}
+.phonesmall {
+	position: relative;
+	top: 40px;
+	left: 110px;
+
+}
+.topbody {
+	width: 575px;
+	position: relative;
+	right: -215px;
+	top: -615px;
+	padding-top: 10px;
+	border-top: 1px solid gray;
+}
+.topbody ul {
+	list-style-position: outside;
+	font-size: 14px;
+	text-align: left;
+	width: 565px;
+	position: relative;
+	background-color: #ffffff;
+	left: 8px;
+	
+}
+.topbody p, .topbody h2 {
+	position:relative;
+	left: -8px;
+}
+.topbody h2 {
+	color: #23649e;
+	background-color: #f5f5f5;
+}
+.bold {
+	font-weight: bold;
+}
+.topbody p {
+	background-color: #fcfcfc;
+}
+.clientserver {
+	width: 220px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: relative;
+	left: 165px;
+	/*padding: 100px 100px 100px 100px;*/
+}
+.bottombody {
+	width: 575px;
+	position: relative;
+	right: -200px;
+	top: -592px;
+}
+.bottombody h2 {
+	color:#23649e;
+}
+.bottombody ol {
+	font-size: 14px;
+	list-style-position: outside;
+	position: relative;
+	right: -15px;
+}
+.bigthree {
+	width: 90px;
+	height: 90px;
+}
+.bottomfooter {
+	width: 485px;
+	position: relative;
+	right: -200px;
+	top: -530px;
+	padding: 20px;
+	padding-left: 100px;
+	border-top: 4px solid #3885e0;
+	border-right: 4px solid #3885e0;
+	border-left: 4px solid #3885e0;
+}
+.bottomfooter h2 {
+	color: #23649e;
+	position: relative;
+	right: 3px;
+}
+.bottomfooter p {
+	font-size: 14px;
+	display: inline;
+	width: 400px;
+}
+.bigthree {
+	position: relative;
+	left: -355px;
+	top: -50px;
+}
+.bottomline {
+	position: relative;
+	top: -75px;
+}
