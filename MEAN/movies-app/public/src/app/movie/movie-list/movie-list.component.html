@@ -1,0 +1,8 @@
+<h3>MovieListComponent</h3>
+
+<div *ngFor="let movie of movies">
+	{{ movie.title }} - {{movie.reviewer}} - {{movie._id}} - {{movie.stars}} - {{movie.review}}
+	<button (click)="destroy(movie)">Delete</button>
+	<button (click)="movie.editable = !movie.editable">Edit</button>
+	<app-movie-edit [movie]="movie" (updateMovieEvent)="update($event)" *ngIf="movie.editable"></app-movie-edit>
+</div>

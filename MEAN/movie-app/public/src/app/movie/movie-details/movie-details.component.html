@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Squishy Tomatoes</h1>
+	<div *ngFor="let movie of movies">
+
+	<h2 >Reviews for {{movie.title}} </h2>
+
+	<!-- {{ movie.title }} - {{movie.reviewer}} - {{movie._id}} - {{movie.stars}} - {{movie.review}}
+	<button (click)="destroy(movie)">Delete</button>
+	<button (click)="movie.editable = !movie.editable">Edit</button> -->
+	<!-- <app-movie-edit [movie]="movie" (updateMovieEvent)="update($event)" *ngIf="movie.editable"></app-movie-edit> -->
+</div>
+
+</body>
+</html>

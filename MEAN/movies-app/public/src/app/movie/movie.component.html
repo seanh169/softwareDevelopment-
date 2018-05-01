@@ -1,0 +1,17 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>MOVIECOMPONENT</h1>
+	{{ movies | json }}
+
+	<app-movie-new (createNewMovieEvent)="create($event)"></app-movie-new>
+	<app-movie-list [movies]="movies" (destroyMovieEvent)="destroy($event)" 
+	(updateMovieEvent)="update($event)"
+	></app-movie-list>
+</body>
+</html>

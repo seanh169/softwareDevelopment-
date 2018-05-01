@@ -1,0 +1,16 @@
+<h3>MovieNewComponent</h3>
+
+<h4>Submit a Movie and your review</h4>
+<form (submit)="create()">
+	Movie Title
+	<input type="text" name="title" [(ngModel)]="newMovie.title"><br>
+	Your Name:
+	<input type="text" name="reviewer" [(ngModel)]="newMovie.reviewer"><br>
+	Stars
+	<input type="number" name="stars" [(ngModel)]="newMovie.stars"><br>
+	Your Review
+	<input type="text" name="review" [(ngModel)]="newMovie.review"><br>
+
+	<input type="submit" value="SUBMIT">
+
+</form>

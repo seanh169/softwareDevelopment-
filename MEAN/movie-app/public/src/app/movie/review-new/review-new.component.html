@@ -1,0 +1,12 @@
+<form (submit)="update()">
+	
+	Your Name:
+	<input type="text" name="reviewer" [(ngModel)]="newMovie.reviewer"><br>
+	Stars
+	<input type="number" name="stars" [(ngModel)]="newMovie.stars"><br>
+	Your Review
+	<input type="text" name="review" [(ngModel)]="newMovie.review"><br>
+
+	<input type="submit" value="SUBMIT">
+
+</form>

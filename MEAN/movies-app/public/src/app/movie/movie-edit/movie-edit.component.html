@@ -1,0 +1,14 @@
+<h5>UserEditComponent</h5>
+<form (submit)="update()">
+	Movie Title
+	<input type="text" name="title" [(ngModel)]="movieEdit.title"><br>
+	Your Name:
+	<input type="text" name="reviewer" [(ngModel)]="movieEdit.reviewer"><br>
+	Stars
+	<input type="number" name="stars" [(ngModel)]="movieEdit.stars"><br>
+	Your Review
+	<input type="text" name="review" [(ngModel)]="movieEdit.review"><br>
+
+	<input type="submit" value="SUBMIT">
+
+</form>
