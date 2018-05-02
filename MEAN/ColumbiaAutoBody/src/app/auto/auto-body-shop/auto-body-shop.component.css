@@ -1,0 +1,9 @@
+#wrapper {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+#left, #right {
+    flex-direction: column;
+}

@@ -1,0 +1,8 @@
+{
+    "short_name" : "ColumbiaAutoBody",
+    "name" : "Columbia Auto Body",
+    "start_url" : "/",
+
+    "display" : "standalone",
+    "orientation" : "portrait"
+}

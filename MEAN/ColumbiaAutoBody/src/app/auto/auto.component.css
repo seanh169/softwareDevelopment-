@@ -1,0 +1,26 @@
+nav {
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #eeeeee;
+    margin: 0 auto;
+    padding: 0px 20%;
+}
+
+img {
+    width: 100px;
+    height: 50px;
+}
+
+#footer {
+    background-color: #2186ff;
+    /* padding: 5px; */
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#footer p {
+    margin: 10px 0;
+} 
