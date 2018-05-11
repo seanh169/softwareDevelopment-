@@ -1,5 +1,7 @@
 package prac;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class practice {
@@ -24,6 +26,8 @@ public class practice {
 		    	  ans = "Not Weird";
 		      }
 		      System.out.println(ans);
+		      Queue<Character> charQue = new LinkedList<Character>();
+		      charQue.remove();
 	}
 	public practice() {};
 }
