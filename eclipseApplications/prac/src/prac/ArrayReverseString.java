@@ -1,5 +1,8 @@
 package prac;
 
+import java.util.HashMap;
+import java.util.Iterator;
+
 public class ArrayReverseString extends Thread {
 	public static void main(String[] args) {
 //		String s = "hello";
@@ -26,8 +29,16 @@ public class ArrayReverseString extends Thread {
 //		Thread x = new Thread();
 //		x.start();
 //		x.
-		System.out.println(z.reverse());
-		System.out.println(n.hashCode());
+//		System.out.println(z.reverse());
+//		System.out.println(n.hashCode());
+		HashMap<implements equals> y = new HashMap();
+		y.put(Object, 3);
+		y.put("blake", 5);
+		y.put(3, 4);
+		for(Object key : y.keySet()) {
+			System.out.println(y.entrySet()); 
+		}
+		
 		
 }
 }
