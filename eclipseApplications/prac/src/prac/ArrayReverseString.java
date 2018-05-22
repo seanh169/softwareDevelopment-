@@ -31,8 +31,8 @@ public class ArrayReverseString extends Thread {
 //		x.
 //		System.out.println(z.reverse());
 //		System.out.println(n.hashCode());
-		HashMap<implements equals> y = new HashMap();
-		y.put(Object, 3);
+		HashMap y = new HashMap();
+//		y.put(Object, 3);
 		y.put("blake", 5);
 		y.put(3, 4);
 		for(Object key : y.keySet()) {
