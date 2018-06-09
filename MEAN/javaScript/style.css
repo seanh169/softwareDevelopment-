@@ -1,0 +1,13 @@
+h1 { 
+	text-align: center;
+
+}
+
+
+h2 {
+	display: inline-flex;
+	padding: 40px;
+	margin-left: 60px;
+	color: #686866;
+	background-color: #ffffcc;
+}
