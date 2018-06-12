@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hunting GitHub</title>
+	<script type="text/javascript" src="test.js"></script>
+	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+<body>
+	<h1>Hunting Github</h1>
+	<script>
+		var button = document.createElement("button");
+		button.innerHTML = "Hunt that Github";
+		var body = document. getElementsByTagName("body")[0];
+		body. appendChild(button);
+		button.addEventListener ("click", function() {
+  			$.get("https://api.github.com/users/seanh169", displayName)
+		// Notice that displayName is a function that takes in 1 parameter (this is the data that comes back from the API)
+		function displayName(data) {
+  		console.log(data);
+		}
+		});
+
+
+	</script>
+
+
+</body>
+</html>
