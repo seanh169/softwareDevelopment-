@@ -25,4 +25,17 @@ function Ninja(name, health){
 		this.health = this.heatlh + 10;
 		console.log(this.health);
 	}
+	Ninja.prototype.punch = function(Ninja){
+		let enemyninja = Ninja;
+		enemyninja.health = enemyninja.health - 5; 
+		console.log(enemyninja.name + " was punched by " + this.name + " and lost 5 health!");
+	}
+	Ninja.prototype.kick = function(Ninja) {
+		let kickedNinja = Ninja;
+		kickedNinja.health = kickedNinja.health - (15 * this.strength);
+		
+		console.log("The ninja preforming the kick has " + this.getStrength() + " strength");
+		console.log(kickedNinja.name + " was kicked by " + this.name + " and lost 15 health!");
+		console.log("In this case, redNinja " + kickedNinja.name + " lost 15 health because blueNinja " + this.name + " has " + this.getStrength() + " point of strength");
+	}
 }
