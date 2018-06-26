@@ -6,26 +6,32 @@ var fs = require('fs');
 var server = http.createServer(function (request, response){
     // see what URL the clients are requesting:
     console.log('client request URL: ', request.url);
+    // console.log(request);å
     // this is how we do routing:
     if(request.url === '/') {
         fs.readFile('index.html', 'utf8', function (errors, contents){
-            response.writeHead(200, {'Content-Type': 'text/html' }) ;
-            // response.writeHead(200, {'Content-Type': 'text/css' });  // send data about response
-            response.write(contents);  //  send response body
-            response.end(); // finished!
+            response.writeHead(200, {'Content-Type': 'text/html'});
+            response.write(contents); 
+            response.end();
         });
     }
-    else if (request.url === '/style.css') {
-        fs.readFile('style.css', 'utf8', function (errors, contents){
-            // response.writeHead(200, {'Content-Type': 'text/html' }) ;
-            response.writeHead(200, {'Content-Type': 'text/css' });  // send data about response
-            response.write(contents);  //  send response body
-            response.end(); // finished!
-        });
+
+    else if (request.url === "/dojo.html") {
+         fs.readFile('dojo.html', 'utf8', function (errors, contents){
+             response.writeHead(200, {'Content-type': 'text/html'});
+             response.write(contents); 
+             response.end();
+         });
     }
+    else if(request.url === '/style.css'){
+    	fs.readFile('./style.css', 'utf8', function(errors, contents){
+     		response.writeHead(200, {'Content-type': 'text/css'});
+     		response.write(contents);
+     		response.end();
+    	});
+  	}
     // request didn't match anything:
     else {
-        response.writeHead(404);
         response.end('File not found!!!');
     }
 });
@@ -33,3 +39,20 @@ var server = http.createServer(function (request, response){
 server.listen(6789);
 // print to terminal window
 console.log("Running in localhost at port 6789");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
