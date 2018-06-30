@@ -4,6 +4,14 @@
 	<title></title>
 </head>
 <body>
-yo
+	<form action="/users" method="post">
+		Name: <input type="text" name="name">
+		Age: <input type="text" name="age">
+		<input type="submit"><br><br>
+		<% for(var i = 0; i < keke.length; i++ ) { %>
+		<li><%=keke[i].name%></li>
+		<li><%=keke[i].age%></li><br>
+		<% } %>
+	</form>	
 </body>
 </html>
