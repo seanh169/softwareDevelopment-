@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	.quote { 
+		color: #656665;
+	 }
+	 .name {
+	 	color: #3433ff;
+	 }
+
+
+	</style>
+	<title></title>
+</head>
+<body>
+	<h1>Here are the awesome quotes!</h1>
+	<% for(var i =keke.length-1; i >= 0; i--) { %>
+	<div class="quote">"<%=keke[i].quote%>"</div><br>
+		<div class="name">BY: <%=keke[i].name%>  <%=keke[i].created_at%></div><br><br>
+	<% } %>
+</body>
+</html>

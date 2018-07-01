@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<!-- <%- JSON.stringify(messages) %>  -->
+
+	<h1>Welcome to Quoting Dojo</h1>
+	<% if(messages.registration) { %>
+     <% for (var x of messages.registration) { %>
+      <h3><%= x %></h3>
+     <% } %>
+ <% } %>
+	<form action="/adduser" method="post">
+	Your Name: <input type="text" name="name"><br><br>
+	Your quote: <textarea name="quote"></textarea><br><br>
+	<input type="submit" name="addquote" value="Add my quote!">
+	</form><br><br>
+	<form action="/quotes">
+	<input type="submit" name="skipquote" value="Skip to quotes!">
+
+
+	</form>
+</body>
+</html>

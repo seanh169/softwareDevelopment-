@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<% for(var i = 0; i < dog.length; i++) { %>
+	<h1>Editing dog name:   <%=dog[i].name%> </h1>
+	
+	<form action='/dogs/ObjectId("<%=dog[i]._id%>")' method="post">
+		New Dog Name: <input type="text" name="name"><br>
+		New Dog Breed: <input type="text" name="breed"><br>
+		New Dog Age: <input type="text" name="age"><br>
+		<input type="submit" value="Edit This Dog!">
+	</form>
+	<% } %>
+</body>
+</html>
