@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	h1 {
+		border-bottom: 3px solid black;
+	}
+	.postname {
+		font-size: 34px;
+	}
+	.commentname {
+		padding-left: 100px;
+		/*font-style: italic;*/
+	}
+	</style>
+	<title></title>
+</head>
+<body>
+	<h1>The Dojo Message Board</h1>
+	<form action="/message" method="post">
+	Name: <br>
+	<input type="text" name="name"><br><br>
+	Message: <br>
+	<textarea name="message"></textarea><br>
+	<input type="submit" value="Post Message">
+	</form><br>
+	<%=lol%><br>
+	<% for(var i=0; i < lol.length; i++) { %>
+	<div class="postname">Name: <%=lol[i].name%><br>
+	Message: <%=lol[i].message%></div><br><br>
+		<% for(var j=0; j< lol[i].comments.length; j++) {%>
+			<div class="commentname">Name: <i><%=lol[i].comments[j].name%></i><br>
+			Comment: <i><%=lol[i].comments[j].comment%></i></div><br><br>
+		<% } %>
+		<form action="/comment/<%=lol[i]._id%>" method="post">
+		Name: <input type="text" name="commentname"><br>
+		Comment: <textarea name="comment"></textarea><br>
+		<input type="submit" value="Post Comment">
+		</form><br>
+	<% } %>
+</body>
+</html>
