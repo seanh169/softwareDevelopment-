@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<base href="/">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>Doggy Dashboard</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<!-- <style>.jumbotron { 
+    background-color: #f4511e; /* Orange */
+    color: #ffffff;
+	}
+	
+
+
+
+	</style> -->
+</head>
+<body>
+	
+	<div class="jumbotron text-center"> <h1>Doggy DashBoard </h1></div>
+	<% if(messages.registration) { %>
+     <% for (var x of messages.registration) { %>
+      <h3><div class="alert alert-danger"><%= x %></h3>
+     <% } %>
+ 	<% } %></div>
+ <h2>List of all Dogs</h2><br>
+ <table class="table table-bordered">
+	<thead>
+ 	<tr>
+ 		<th scope="col">Dog Name</th>
+ 		<th scope="col">Dog Breed</th>
+ 		<th scope="col">Dog Age</th>
+ 		<th class="action">Action</th>
+ 	</thead>
+ 	</tr>
+ 	<tbody>
+ 	<tr>
+ <% for(var i =0; i < lol.length; i++) { %>
+ <td><%=lol[i].name%></td><br>
+ <td><%=lol[i].breed%></td><br>
+ <td><%=lol[i].age%></td><br>
+
+
+ <td class="buttons"><div class="one"><form action='/dogs/destroy/ObjectId("<%=lol[i]._id%>")' method="post">
+ 	<input type="submit" value="delete" class="btn-danger">
+ 	</form></div>
+ 	<div class="two"><form action='/dogs/ObjectId("<%=lol[i]._id%>")'><input type="submit" value="Show info" class="btn-info"></form></div>
+
+ 	<form action='/dogs/edit/ObjectId("<%=lol[i]._id%>")'><input type="submit" value="Edit Info" class="btn-warning"></form></td>
+ 	
+
+</tr>
+</tbody>
+ <% } %>
+
+</table>
+<form action='/dogs/new'><input type="submit" value="New Dog" class="btn btn-primary btn-lg"></form>
+</body>
+</html>

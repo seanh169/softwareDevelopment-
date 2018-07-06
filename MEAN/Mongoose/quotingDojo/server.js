@@ -8,6 +8,8 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 // Require path
 var path = require('path');
+
+// Require session , necessary for flash
 var session = require('express-session');
 app.use(session({
   secret: 'keyboardkitteh',

@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.jumbotron { 
+    background-color: #f4511e !important; /* Orange */
+    color: #ffffff !important;
+}
+
+h2 { 
+	text-align: center;
+	position: relative;
+	top: 125px;
+
+ }
+ .buttons { 
+
+ 	display:inline-flex;
+
+
+ }
+.one {
+
+	padding-left: 20px;
+
+}
+ .two {
+
+ 	padding-left: 20px;
+ 	padding-right: 20px;
+
+ }
+
+ .btn-primary {
+ 	position: relative;
+
+ 	left: 50%;
+
+
+ }
+
+ .table-bordered {
+ 	padding-left: 20px;
+ }
