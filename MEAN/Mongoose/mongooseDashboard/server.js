@@ -26,7 +26,7 @@ app.use(session({
   cookie: { maxAge: 60000 }
 }))
 
-
+app.use(express.static( __dirname + '/public/dist/public' ));
 // // Require Mongoose
 var mongoose = require('mongoose');
 // // Mongoose to Conncet

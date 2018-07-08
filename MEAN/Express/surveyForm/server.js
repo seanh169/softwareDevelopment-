@@ -13,31 +13,31 @@ app.use(session({
   saveUninitialized: true,
   cookie: { maxAge: 60000 }
 }))
-
+app.use(express.static( __dirname + '/practice-app/dist/' ));
 var bodyParser = require('body-parser');
 // use it!
 app.use(bodyParser.urlencoded({ extended: true }));
 // static content
-app.use(express.static(path.join(__dirname, "./static")));
-// setting up ejs and our views folder
-app.set('views', path.join(__dirname, './views'));
-app.set('view engine', 'ejs');
+// app.use(express.static(path.join(__dirname, "./static")));
+// // setting up ejs and our views folder
+// app.set('views', path.join(__dirname, './views'));
+// app.set('view engine', 'ejs');
 
 
-app.get('/', function(req, res) {
+// app.get('/', function(req, res) {
 
-	res.render('index');
+// 	res.render('index');
 
 
 
-})
-app.post('/result', function(req, res){
+// })
+// app.post('/result', function(req, res){
 
-	var formdata = req.body;
-	console.log(req.body);
-	res.render('result', {formzdata: formdata});
+// 	var formdata = req.body;
+// 	console.log(req.body);
+// 	res.render('result', {formzdata: formdata});
 
-})
+// })
 
 
 
