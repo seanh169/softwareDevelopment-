@@ -32,6 +32,17 @@
       <h3><div class="alert alert-danger"><%= x %></h3>
      <% } %>
  	<% } %></div>
+ <p>The current time is: <span id="time"></span></p>
+<button id="time-btn">Get current time</button>
+<script>
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth()+1; //January is 0!
+
+ document.getElementById('time-btn').onclick = () => {
+  document.getElementById('time').innerHTML = new Date().toString();
+ }
+</script>
  <h2>List of all Dogs</h2><br>
  <table class="table table-bordered">
 	<thead>
@@ -60,6 +71,7 @@
 
 </tr>
 </tbody>
+
  <% } %>
 
 </table>

@@ -1,7 +1,8 @@
 const mongoose = require('mongoose'), 
       Dog = mongoose.model('Dog')
-
-
+const fs = require('fs')
+// img path
+var imgPath = '../';
 
 var dogz = { index: function(req, res) {
 	var dogs = Dog.find({}, function(err, dogs) {
@@ -13,6 +14,7 @@ var dogz = { index: function(req, res) {
     // This is where we will retrieve the users from the database and include them in the view page we will be rendering.
     res.render('newDog');
 	}, createDog: function(req, res) {
+	console.log(req.body);	
 	var dog = new Dog({name: req.body.name, breed: req.body.breed, age: req.body.age});
 	dog.save(function(err) {
     // if there is an error console.log that something went wrong!
@@ -21,7 +23,7 @@ var dogz = { index: function(req, res) {
       for(var key in err.errors){
       		req.flash('registration', err.errors[key].message);
       }
-      res.redirect('/');
+      res.render('newDog');
     } else { // else console.log that we did well and then redirect to the root route
       console.log('successfully added a dog!');
       res.redirect('/');
