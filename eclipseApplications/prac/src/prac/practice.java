@@ -26,11 +26,13 @@ public class practice {
 	
 		
 		public static void main(String[] args) {
-			Wheel z = new rubberWheel();  
-			rubberWheel rb = new rubberWheel();
-			Car x = new Car();
-			System.out.println(x.wh.size);
-//			System.out.println(rb.material);
+//			Wheel z = new rubberWheel();  
+//			rubberWheel rb = new rubberWheel();
+//			Car x = new Car();
+//			System.out.println(x.wh.size);
+////			System.out.println(rb.material);
+			
+			
 		}
 
 
