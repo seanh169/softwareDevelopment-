@@ -8,6 +8,7 @@ import { HttpService } from './http.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  tasks; 
   title = 'MEAN';
   constructor(private _httpService: HttpService){}
 
@@ -18,6 +19,7 @@ export class AppComponent implements OnInit {
     getTasksFromService(){
     let observable = this._httpService.getTasks();
     observable.subscribe(data => console.log("Got our tasks!", data));
+    this.tasks = data; 
 }
 
 }

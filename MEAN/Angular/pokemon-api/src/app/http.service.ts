@@ -6,6 +6,7 @@ export class HttpService {
 	getPokemon(){
     	let bulbasaur = this._http.get('https://pokeapi.co/api/v2/pokemon/1/');
     	bulbasaur.subscribe(data => console.log(data.name));
+    
 	}
 	getAbiltiies(){
 		let bulbasaur = this._http.get('https://pokeapi.co/api/v2/pokemon/1/');
@@ -31,9 +32,9 @@ export class HttpService {
 		})
 	}
   constructor(private _http: HttpClient) {
-    this.getPokemon();
-    this.getAbiltiies();
-    this.showSimilar();
+    // this.getPokemon();
+    // this.getAbiltiies();
+    // this.showSimilar();
 	}
 
 
