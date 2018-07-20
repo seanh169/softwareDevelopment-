@@ -43,18 +43,44 @@ onButtonClickParam(num: Number): void {
 onButtonClick(): void {
  let observable = this._httpService.getTasks();
  let tasks = document.getElementById("tasks");
+ let text = "";
+ let showinfo = document.createElement("input");
+ showinfo.type = "button";
+ showinfo.value = "show info";
+ 
 
  observable.subscribe(data => {
      console.log(data);
      for(let dat in data){ 
-       document.getElementById("tasks").innerHTML ="<b>task title</b>" + "<br><br>" +  data[dat].title + "-" + data[dat].description;
+       text += data[dat].title+ "&nbsp;&nbsp;&nbsp;&nbsp;" + "<button ng-click='showinfo()'>show info</button> " +   "<br><br><br>"
+       document.getElementById("tasks").innerHTML = text;
+       
 
 
      }
-
+     
 
  })
 
 }
 
+showinfo(): void {
+   let observable = this._httpService.getTasks();
+   observable.subscribe(data => {
+       console.log("GOT HERE");
+
+   })
+
+
 }
+
+
+
+
+
+
+
+
+}
+
+
