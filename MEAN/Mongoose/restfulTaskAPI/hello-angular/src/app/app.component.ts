@@ -52,10 +52,10 @@ onButtonClick(): void {
  observable.subscribe(data => {
      console.log(data);
      for(let dat in data){ 
-       text += data[dat].title+ "&nbsp;&nbsp;&nbsp;&nbsp;" + "<button ng-click='showinfo()'>show info</button> " +   "<br><br><br>"
+       text += data[dat].title+ "&nbsp;&nbsp;&nbsp;&nbsp;" + "<button ng-click='showinfo(data[dat]._id)'>show info</button> " +   "<br><br><br>"
        document.getElementById("tasks").innerHTML = text;
        
-
+      
 
      }
      
@@ -64,7 +64,8 @@ onButtonClick(): void {
 
 }
 
-showinfo(): void {
+showinfo(idz): void {
+  console.log(idz);
    let observable = this._httpService.getTasks();
    observable.subscribe(data => {
        console.log("GOT HERE");
