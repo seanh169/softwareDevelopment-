@@ -13,14 +13,17 @@ export class AppComponent implements OnInit {
   title = 'Restful Tasks API';
   newTask: any;
   thisTask = [];
+  editThisTask: any;
   constructor(private _httpService: HttpService){}
 
     ngOnInit(){
-      
+      this.editThisTask = {title: "", description: ""};
       this.newTask = {title: "", description: ""};
+
       // this.thisTask = {title: "", description: ""};
       // console.log(this.newTask.title)
       this.getTasksFromService();
+      // this.thisTask = [];
       // console.log("Hello");
     }
     onSubmit(){
@@ -76,8 +79,24 @@ export class AppComponent implements OnInit {
 
     }
 
+    updateTask(thisId: String){
+      // console.log(thisId);
+      // console.log(this.editThisTask);
+      let observable = this._httpService.updateTask(this.editThisTask, thisId);
+      observable.subscribe(data => {
+          console.log("got our data" , data);
 
 
+      })
+    }
+    deleteTask(deleteId: String){
+      let observable = this._httpService.deleteTask(deleteId);
+      observable.subscribe(data => {
+          console.log("got our data" , data);
+
+
+      })
+    }
 // onButtonClick(): void {
 //  let observable = this._httpService.getTasks();
 //  let tasks = document.getElementById("tasks");

@@ -34,9 +34,16 @@
 
 
 
-<h1>Task List</h1>&nbsp;&nbsp;&nbsp;&nbsp; <span *ngFor="let thi of thisTask"><h3> Edit Task:</h3><br><b>Title</b><input type="text" placeholder="thi.title" name="editTask.title" [(ngModel)]="editTask.title" /> {{thi.title}}</span><br>
+<h1>Task List</h1>&nbsp;&nbsp;&nbsp;&nbsp; 
 
-<span *ngFor="let task of tasks"><h2>{{task.title}}</h2>{{task.description}}<br><br><button (click)="editTask(task._id)">Edit</button>&nbsp;&nbsp;<button (click)="deleteTask()">Delete</button></span>
+
+<span *ngFor="let thi of thisTask"><h3> Edit Task:</h3><br>
+<form (submit)=updateTask(thi._id)>
+  <b>Title</b><input type="text" placeholder="{{thi.title}}" name="editTask.title" [(ngModel)]="editThisTask.title" /> <br><b>Description</b><input type="text" placeholder="{{thi.description}}" name="editTask.description" [(ngModel)]="editThisTask.description" /><br><input type="submit" value="Update Task"/></form></span><br>
+
+
+
+<span *ngFor="let task of tasks"><h2>{{task.title}}</h2>{{task.description}}<br><br><button (click)="editTask(task._id)">Edit</button>&nbsp;&nbsp;<button (click)="deleteTask(task._id)">Delete</button></span>
 
 
 

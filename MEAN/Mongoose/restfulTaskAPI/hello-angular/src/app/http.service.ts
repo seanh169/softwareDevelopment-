@@ -39,5 +39,13 @@ export class HttpService {
 	 editTask(thistask){
 	 	return this._http.get('/' + thistask);
 	 }
- 
+	 updateTask(thisTas, thisId){
+	 	console.log(thisTas.title);
+	 	console.log(thisId);
+	 	console.log(this._http.get('/update/'+thisId + '/' + thisTas.title + '/' + thisTas.description + '/'));
+	 	return this._http.get('/update/'+thisId + '/' + thisTas.title + '/' + thisTas.description + '/');
+	 }	
+	 deleteTask(deleteID){
+	 	return this._http.get('/remove/' + deleteID);
+	 }
 }
