@@ -22,13 +22,22 @@ export class HttpService {
   	// this.getTasks();
 
   	}
+  	addTask(newtask){
+  		// console.log(newtask.title + " "+ newtask.description);
+  		// return this._http.post('/task', newtask)
+  		return this._http.get('/new/'+ newtask.title + '/' + newtask.description + '/', newtask);
+
+  		// return this._http.get('/task', newtask);
+
+  		
+  		// console.log(this._http.get('/tasks'));
+  		
+  	}
 	 getTasks() {
  		return this._http.get('/tasks');
 	 }
- 	postToServer(num){
-    // use the .post() method of HttpClient
-    // num must be an object
-    // provide the url of your post route - make sure this is set up in your server!
-    return this._http.post('/tasks', num);  
-	}
+	 editTask(thistask){
+	 	return this._http.get('/' + thistask);
+	 }
+ 
 }

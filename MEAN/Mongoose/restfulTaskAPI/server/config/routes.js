@@ -15,7 +15,7 @@ app.get('/tasks', function(req, res) {
   })
 
 app.get('/new/:taskTitle/:taskDescription/', function(req, res) {
-  	
+  	console.log('hell0')
     tasks.addTask(req, res);
 })
 
@@ -40,6 +40,11 @@ app.get('/update/:id/:newTitle/:newDesc/', function(req, res) {
   tasks.update(req, res);
 
 	
+})
+
+app.get('/task', function(req, res) {
+	console.log(newtask);
+	tasks.addTask(req, res);
 })
 
 }

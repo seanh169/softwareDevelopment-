@@ -17,11 +17,18 @@ const mongoose = require('mongoose'),
 
 	}, 
 	addTask: function(req, res){
+		// console.log();
+		console.log('yo');
 		var task = new Tasks({title: req.params.taskTitle, description: req.params.taskDescription});task.save();res.redirect('/')
 
 	},
+	addNew: function(req, res){
+
+		console.log('hello');
+
+	},
 	look: function(req, res){Tasks.find({_id: req.params.id}).lean().exec(function (err, users) {
-		return res.json(JSON.stringify(users));
+		return res.json(users);
 
 	})},
 	remove: function(req, res){Tasks.deleteOne({ _id: req.params.id}, function(err){});res.redirect('/')},

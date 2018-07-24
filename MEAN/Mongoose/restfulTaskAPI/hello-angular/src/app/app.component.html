@@ -2,22 +2,46 @@
 <html>
 <head>
   <script src="jquery-3.3.1.min.js"></script>
-  <title>Restfuk Tasks API</title>
+  <title>Restful Tasks API</title>
 </head>
 <body>
 <h1 style="text-align: center;">{{title}}</h1>
 
 
 <br><br>
-<div  style="text-align: center">
-<button (click)="onButtonClick()">Show Tasks!</button></div><br><br>
+<!-- <div  style="text-align: center"> -->
+<!-- <button (click)="onButtonClick()">Show Tasks!</button></div><br><br> -->
+
+<!-- <div id="woah" *ngFor="let task of tasks">
+    <p>{{task.title}}</p>
+    <button (click)="taskToShow(task)">Show</button>  
+</div> -->
+
+
 
 
 <div id="tasks" style="text-align: center"></div>
 
 
+<form (submit)="onSubmit()">
+  <h1>New Task</h1>
+  <!-- <p> {{ newTask | json }} </p> -->
+  <input type="text" placeholder="Task Title" name="newTask.title" [(ngModel)]="newTask.title" />
+  <input type="text" placeholder="Task Description" name="newTask.description" [(ngModel)]="newTask.description" />
+    <input type="submit" value="Create Task" />
+</form><br><br>
 
-<div id="info" style="text-align: center"></div>
+
+
+
+<h1>Task List</h1>&nbsp;&nbsp;&nbsp;&nbsp; <span *ngFor="let thi of thisTask"><h3> Edit Task:</h3><br><b>Title</b><input type="text" placeholder="thi.title" name="editTask.title" [(ngModel)]="editTask.title" /> {{thi.title}}</span><br>
+
+<span *ngFor="let task of tasks"><h2>{{task.title}}</h2>{{task.description}}<br><br><button (click)="editTask(task._id)">Edit</button>&nbsp;&nbsp;<button (click)="deleteTask()">Delete</button></span>
+
+
+
+
+<!-- <div id="info" style="text-align: center"></div> -->
 
 
 <!-- <h2 style="text-align: center;">All of the Tasks: </h2>
