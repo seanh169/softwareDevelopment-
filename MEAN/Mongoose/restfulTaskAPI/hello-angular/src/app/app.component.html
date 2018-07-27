@@ -23,7 +23,7 @@
 <div id="tasks" style="text-align: center"></div>
 
 
-<form (submit)="onSubmit()">
+<form (submit)="onSubmit()" style="text-align: center">
   <h1>New Task</h1>
   <!-- <p> {{ newTask | json }} </p> -->
   <input type="text" placeholder="Task Title" name="newTask.title" [(ngModel)]="newTask.title" />
@@ -34,18 +34,19 @@
 
 
 
-<h1>Task List</h1>&nbsp;&nbsp;&nbsp;&nbsp; 
+<h1 style="text-align: center">Task List</h1>&nbsp;&nbsp;&nbsp;&nbsp; 
 
 
-<span *ngFor="let thi of thisTask"><h3> Edit Task:</h3><br>
+<span *ngFor="let thi of thisTask" style="text-align: center"><h3> Edit Task:</h3><br>
 <form (submit)=updateTask(thi._id)>
-  <b>Title</b><input type="text" placeholder="{{thi.title}}" name="editTask.title" [(ngModel)]="editThisTask.title" /> <br><b>Description</b><input type="text" placeholder="{{thi.description}}" name="editTask.description" [(ngModel)]="editThisTask.description" /><br><input type="submit" value="Update Task"/></form></span><br>
+  <b>Title</b><input type="text" placeholder="{{thi.title}}" name="editTask.title" [(ngModel)]="editThisTask.title" /> <br><br><b>Description</b><input type="text" placeholder="{{thi.description}}" name="editTask.description" [(ngModel)]="editThisTask.description" /><br><input type="submit" value="Update Task"/></form></span><br>
 
 
 
-<span *ngFor="let task of tasks"><h2>{{task.title}}</h2>{{task.description}}<br><br><button (click)="editTask(task._id)">Edit</button>&nbsp;&nbsp;<button (click)="deleteTask(task._id)">Delete</button></span>
+<span *ngFor="let task of tasks" style="text-align: center"><div style="border: 1px solid black; text-align: center; border-radius: 20px; width: 400px; margin-left: 175px"><h2>{{task.title}}</h2>{{task.description}}<br><br><button (click)="editTask(task._id)">Edit</button>&nbsp;&nbsp;<button (click)="deleteTask(task._id)">Delete</button></div><br><br></span>
 
-
+<br>
+{{ tasks | json }}
 
 
 <!-- <div id="info" style="text-align: center"></div> -->
