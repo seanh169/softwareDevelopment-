@@ -28,28 +28,28 @@ export class AppComponent implements OnInit {
     }
     onSubmit(){
 
-      console.log("hello");
-      console.log(this.newTask);
-
       let observable = this._httpService.addTask(this.newTask);
       observable.subscribe(data => {
-          console.log("Got data back from post", data);
-          this.newTask = {title: "", description: ""}
+          // console.log("Got data back from post", data);
+
+          this.newTask = {title: "", description: ""};
+
 
       })
+      // location.reload();
     }
     getTasksFromService(){
       let observable = this._httpService.getTasks();
 
       observable.subscribe(data => {
 
-      console.log("Got our tasks!", data)
+      // console.log("Got our tasks!", data)
       for(let dat in data){ 
         this.tasks.push((data[dat]));
       }
-      console.log(this.tasks);
+      // console.log(this.tasks);
    
-    });
+    })
 
     
     }
