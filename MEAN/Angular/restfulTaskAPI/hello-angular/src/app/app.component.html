@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="jquery-3.3.1.min.js"></script>
   <title>Restful Tasks API</title>
 </head>
 <body>
-<h1 style="text-align: center;">{{title}}</h1>
+<h1 style="text-align: center;" class="jumbotron">{{title}}</h1>
 
 
 <br><br>
@@ -27,7 +35,7 @@
   <!-- <p> {{ newTask | json }} </p> -->
   <input type="text" placeholder="Task Title" name="newTask.title" [(ngModel)]="newTask.title" />
   <input type="text" placeholder="Task Description" name="newTask.description" [(ngModel)]="newTask.description" />
-    <input type="submit" value="Create Task" />
+    <input type="submit" class="btn-primary" value="Create Task" />
 </form><br><br>
 
 
@@ -35,16 +43,29 @@
 
 <h1 style="text-align: center">Task List</h1>&nbsp;&nbsp;&nbsp;&nbsp; <br>
 <div  style="text-align: center">
-<button (click)="onButtonClick()">Show Tasks!</button></div><br><br>
+<button (click)="onButtonClick()" class="btn-danger">Show Tasks!</button></div><br><br>
 <!-- <div id='displayTasks' *ngFor="let task of tasks">
     <p>{{task.title}}</p>
     <button (click)="taskToShow(task)">Show</button> 
 </div>
  -->
 
-<div id="tasks" style="text-align: center"><div *ngFor="let task of allTasks">{{task.title}} - {{task.description}} <button (click)="showInfo(task._id)">Show Info</button><button (click)="deleteTask(task._id)">Delete Info</button></div></div><br><br>
+<div id="tasks" style="text-align: center"><div *ngFor="let task of allTasks">{{task.title}} - {{task.description}} <button (click)="showInfo(task._id)">Show Info</button><button (click)="deleteTask(task._id)">Delete Info</button><button (click)="editTask(task._id)">Edit Task</button></div></div><br><br>
 
-<div id="displayTasks" style="text-align: center"><div *ngFor="let task of selectedTask">{{task.description}}</div></div>
+<div id="displayTasks" style="text-align: center"><div  style="border: 1px solid black" *ngFor="let task of selectedTask">{{task.description}}</div></div>
+
+
+<div id="editTask" style="text-align: center"><div *ngFor="let thi of thisTask"><form (submit)=updateTask(thi._id)><b>Title</b><input type="text" placeholder="{{thi.title}}" name="editTask.title" [(ngModel)]="editThisTask.title" /> <br><br><b>Description</b><input type="text" placeholder="{{thi.description}}" name="editTask.description" [(ngModel)]="editThisTask.description" /><br><br><input type="submit" value="Update Task"/></form></div></div>
+
+
+
+
+
+
+
+
+
+
 <!-- <span *ngFor="let thi of thisTask" style="text-align: center"><h3> Edit Task:</h3><br>
 <form (submit)=updateTask(thi._id)>
   <b>Title</b><input type="text" placeholder="{{thi.title}}" name="editTask.title" [(ngModel)]="editThisTask.title" /> <br><br><b>Description</b><input type="text" placeholder="{{thi.description}}" name="editTask.description" [(ngModel)]="editThisTask.description" /><br><br><input type="submit" value="Update Task"/></form></span><br>

@@ -57,6 +57,7 @@ export class AppComponent implements OnInit {
     
     }
    editTask(taskid: String){
+       this.thisTask = [];
        let observable = this._httpService.editTask(taskid);
        observable.subscribe(data => {
          for(let item in data){
@@ -91,6 +92,7 @@ export class AppComponent implements OnInit {
 
 
       })
+      this.onButtonClick();
     }
     deleteTask(deleteId: String){
       let observable = this._httpService.deleteTask(deleteId);

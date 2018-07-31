@@ -1,4 +1,4 @@
-const mongoose = require('mongoose'), 
+const mongoose = require('mongoose'),  
       Tasks = mongoose.model('Tasks')
 mongoose.Promise = global.Promise;
 module.exports = function(app){
