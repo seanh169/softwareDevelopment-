@@ -1,0 +1,36 @@
+.table-bordered{
+	width: 100%;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border: 1px solid black;
+}
+.jumbotron { 
+	background-color: #f4511e;
+	color: #ffffff;
+	padding: 100px 25px;
+
+}
+
+th {
+	text-align: center;
+}
+td { 
+	text-align: center;
+}
+
+#displayTasks { 
+
+	padding-bottom: 50px;
+ }
+
+ .bg-grey {
+    background-color: #f6f6f6;
+}
+.container-fluid {
+    padding: 60px 50px;
+}
+
+.glyphicon-pencil {
+	position: relative;
+	top: 10px;
+}
