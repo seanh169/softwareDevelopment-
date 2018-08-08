@@ -17,23 +17,23 @@
 <body>
   <h1 class="jumbotron">Rate My Cakes</h1>
   <form (submit)="onSubmit()" class="newCake">
-    Submit a cake to be rated<br><br>
-    Baker name: <br>
-    <input type="text" placeholder="New Cake Title" name="newCake.title" [(ngModel)]="newCake.title" />
+    <i>Submit a cake to be rated</i><br><br>
+    <b>Baker name:</b> <br><br>
+    <input type="text" placeholder="New Cake Title" name="newCake.title" [(ngModel)]="newCake.title" /><br><br><b>Cake URL:</b><br><br>
   <input type="text" placeholder="New Cake URL" name="newCake.URL" [(ngModel)]="newCake.URL" />
-    <input type="submit" value="SUBMIT" class="btn-danger">
+    <br><br><input type="submit" value="SUBMIT" class="btn-danger">
 
 
 
   </form>
 
 <form id="rateForm">
- <div id="allCakes" *ngFor="let x of allCakes"><img src={{x.URL}}>{{x.title}}&nbsp;{{x.URL}}<br><br><br>
+ <div id="allCakes" *ngFor="let x of allCakes"><img src="{{x.URL}}">{{x.title}}&nbsp;{{x.URL}}<br><br><br>
 
 
 
 
-
+<!-- <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg" style="width: 50%;"> -->
 
 
  </div>

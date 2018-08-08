@@ -9,9 +9,9 @@ export class HttpService {
 
 
   addCake(newCake){
-  		// console.log(newtask.title + " "+ newtask.description);
-  		// return this._http.post('/task', newtask)
-  		return this._http.get('/new/'+ newCake.title + '/' + newCake.URL + '/', newCake);
+      let newCakez = newCake.URL.slice(8, newCake.URL.length-4);
+  		console.log(newCake.URL);
+  		return this._http.get('/new/'+ newCake.title + '/' + newCakez + '/', newCake);
 
   		// return this._http.get('/task', newtask);
 

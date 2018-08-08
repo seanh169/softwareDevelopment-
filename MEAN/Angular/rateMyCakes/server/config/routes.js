@@ -15,7 +15,7 @@ app.get('/cakes', function(req, res) {
   })
 
 app.get('/new/:cakeTitle/:cakeURL/', function(req, res) {
-  	console.log('hell0')
+  	// console.log('hell0')
     cakes.addCake(req, res);
 })
 
@@ -43,7 +43,7 @@ app.get('/update/:id/:newTitle/:newURL/', function(req, res) {
 })
 
 app.get('/cake', function(req, res) {
-	console.log(newtask);
+	// console.log(newtask);
 	tasks.addCake(req, res);
 })
 
