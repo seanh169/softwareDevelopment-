@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="jquery-3.3.1.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rate my Cakes</title>
+</head>
+<body>
+  <h1 class="jumbotron">Rate My Cakes</h1>
+  <form (submit)="onSubmit()" class="newCake">
+    Submit a cake to be rated<br><br>
+    Baker name: <br>
+    <input type="text" placeholder="New Cake Title" name="newCake.title" [(ngModel)]="newCake.title" />
+  <input type="text" placeholder="New Cake URL" name="newCake.URL" [(ngModel)]="newCake.URL" />
+    <input type="submit" value="SUBMIT" class="btn-danger">
+
+
+
+  </form>
+
+<form id="rateForm">
+ <div id="allCakes" *ngFor="let x of allCakes"><img src={{x.URL}}>{{x.title}}&nbsp;{{x.URL}}<br><br><br>
+
+
+
+
+
+
+
+ </div>
+</form>
+
+
+
+
+
+</body>
+</html>
