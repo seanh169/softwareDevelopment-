@@ -13,12 +13,36 @@ module.exports = function(app){
 
 	})
 	
+	app.get('/new/:name/', function(req, res){
+		// console.log('hi')
+		authors.addAuthor(req, res);
+		// res.redirect('/');
+
+	})
+
+	app.get('/remove/:id', function(req, res) { 
+
+	
+  		authors.remove(req, res);
+
+	
+	})
+	app.get('/update/:id/:newTitle/', function(req, res) { 
+
+	
+  		authors.update(req, res);
+
+	
+	})
 
 
+	app.get('/:id', function(req, res) { 
 
+	
+  		authors.look(req, res);
 
-
-
+	
+	})
 
 
 

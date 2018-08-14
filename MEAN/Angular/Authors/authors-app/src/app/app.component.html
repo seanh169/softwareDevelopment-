@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Authors App</title>
+ 
 </head>
 <body>
   <h1>Favorite authors</h1>
   <button [routerLink]="['/new']">Add An Author</button>
+  
 
+  <table>
+  	
+  	<tr>
+  		<th>Author</th>
+  		<th>Actions Available</th>
+  	</tr>
+  	<tr *ngFor="let author of authors">
+  		<td>{{author.name}}</td>
+  		<td><button (click)="findOneAuthor(author._id)">Edit Task</button><button (click)="deleteAuthor(author._id)">Delete Task</button></td>
+  	</tr>
+
+  </table>
+
+
+
+{{authors | json}}
+
+<router-outlet></router-outlet><br><br>
+
+ <div id="authors" *ngFor="let thi of authorid"><form><b>Update Name</b><input type="text" placeholder="{{thi.name}}" /> <br><input type="submit" class="btn-success" value="Update Task"/></form></div>
+
+{{authorid | json}}
 
 
 </body>
 </html>
 
-<router-outlet></router-outlet>
+

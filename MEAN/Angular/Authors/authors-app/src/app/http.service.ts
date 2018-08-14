@@ -10,16 +10,14 @@ export class HttpService {
   getAuthors(){
   	return this._http.get('/authors');
   }
-  // addAuthor(newtask){
-  // 		// console.log(newtask.title + " "+ newtask.description);
-  // 		// return this._http.post('/task', newtask)
-  // 		return this._http.get('/new/'+ newtask.title + '/' + newtask.description + '/', newtask);
-
-  // 		// return this._http.get('/task', newtask);
-
-  		
-  // 		// console.log(this._http.get('/tasks'));
-  		
-  // 	}
-
+  addAuthor(newauthor){
+    console.log(newauthor);
+    return this._http.get('/new/'+ newauthor.name +'/', newauthor);
+  }  
+  deleteAuthor(deleteID){
+     return this._http.get('/remove/' + deleteID);
+   }
+  findOneAuthor(thisauthor){
+     return this._http.get('/' + thisauthor);
+   }
 }

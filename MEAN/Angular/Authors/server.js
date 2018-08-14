@@ -25,7 +25,7 @@ var AuthorSchema = require('./server/models/authors.js')
 require('./server/config/routes.js')(app)
 
 app.all("*", (req,res,next) => {
-  	res.sendFile(path.resolve("./public/dist/public/index.html"))
+  	res.sendFile(path.resolve("./authors-app/dist/index.html"))
 });
 // tell the express app to listen on port 8000
 app.listen(8000, function() {
