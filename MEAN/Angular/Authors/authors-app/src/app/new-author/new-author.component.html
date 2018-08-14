@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>new Author</title>
+</head>
+<body>
+	Add a new Author: 
+	<form (submit)="addNewAuthor()">
+		<p> {{newAuthor | json}} </p>
+		Name:
+		<input type="text" name="newAuthor.name" [(ngModel)]="newAuthor.name" /><br>
+		<input type="submit" value="Submit" />
+	</form>	
+</body>
+</html>
