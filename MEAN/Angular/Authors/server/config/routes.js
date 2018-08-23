@@ -4,6 +4,13 @@ mongoose.Promise = global.Promise;
 
 module.exports = function(app){
 	var authors=require('../controllers/authors.js')
+	app.get('/', function(req, res){
+
+
+
+		authors.index(req, res);
+
+	})
 
 	app.get('/authors', function(req, res){
 
@@ -27,7 +34,7 @@ module.exports = function(app){
 
 	
 	})
-	app.get('/update/:id/:newTitle/', function(req, res) { 
+	app.get('/update/:id/:name/', function(req, res) { 
 
 	
   		authors.update(req, res);

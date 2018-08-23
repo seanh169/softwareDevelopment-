@@ -14,8 +14,8 @@ const mongoose = require('mongoose'),
       addAuthor: function(req, res){
       	var author = new Authors({name: req.params.name });author.save();res.redirect('/authors')
       },
-      remove: function(req, res){Authors.deleteOne({ _id: req.params.id}, function(err){});res.redirect('/')},
-      update: function(req, res){Authors.findOneAndUpdate({ _id: req.params.id}, {$set: {name: req.params.newAuthor}}, function(err){}); res.redirect('/')},
+      remove: function(req, res){Authors.deleteOne({ _id: req.params.id}, function(err){});res.redirect('/authors')},
+      update: function(req, res){Authors.findOneAndUpdate({ _id: req.params.id}, {$set: {name: req.params.name}}, function(err){}); res.redirect('/authors')},
 
       look: function(req, res){Authors.find({_id: req.params.id}).lean().exec(function (err, users) {
         return res.json(users);

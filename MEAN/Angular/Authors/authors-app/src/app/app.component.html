@@ -7,7 +7,7 @@
   <h1>Favorite authors</h1>
   <button [routerLink]="['/new']">Add An Author</button>
   
-
+  <p>We have quotes by:</p>
   <table>
   	
   	<tr>
@@ -23,13 +23,13 @@
 
 
 
-{{authors | json}}
+<!-- {{authors | json}} -->
 
 <router-outlet></router-outlet><br><br>
 
- <div id="authors" *ngFor="let thi of authorid"><form><b>Update Name</b><input type="text" placeholder="{{thi.name}}" /> <br><input type="submit" class="btn-success" value="Update Task"/></form></div>
+ <div id="authors" *ngFor="let thi of authorid"><form (click)="updateAuthor(thi._id) "><b>Update Name</b><input type="text" placeholder="{{thi.name}}" name="editAuthor.name" [(ngModel)]="editAuthor.name"  /> <br><input type="submit" class="btn-success" value="Update Task"/></form></div>
 
-{{authorid | json}}
+<!-- {{authorid | json}} -->
 
 
 </body>

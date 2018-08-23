@@ -20,4 +20,11 @@ export class HttpService {
   findOneAuthor(thisauthor){
      return this._http.get('/' + thisauthor);
    }
+   updateAuthor(thisAuthor, thisId){
+     console.log(thisAuthor.name)
+     // console.log(thisTas.title);
+     console.log(thisId); 
+     // console.log(this._http.get('/update/'+thisId + '/' + thisTas.title + '/' + thisTas.description + '/'));
+     return this._http.get('/update/'+thisId + '/' + thisAuthor.name + '/');
+   }  
 }

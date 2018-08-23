@@ -10,6 +10,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
 	newAuthor: any;
+  editAuthor: any;
   title = 'app';
   authors = [];
   authorid = [];
@@ -20,6 +21,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(){
     this.newAuthor = {name: ""};
+    this.editAuthor = {name: ""};
     this.onClick();
     // this.authors = [];
   }
@@ -48,6 +50,15 @@ export class AppComponent implements OnInit {
          }
 
        })
+    }
+    updateAuthor(thisId: String){
+       console.log(this.editAuthor);
+      let observable = this._httpService.updateAuthor(this.editAuthor, thisId);
+      observable.subscribe(data => {
+          console.log("got our data" , data);
+
+      })
+      // this.onClick();
     }
   
 }
