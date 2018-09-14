@@ -29,4 +29,5 @@ export class HttpService {
   //     "lon": -77.036369,
   //     "lat": 38.895111
   //   }
-  // },
+  // }
+}
