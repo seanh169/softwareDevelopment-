@@ -1,5 +1,5 @@
 body {
-	border: 1px solid black;
+	border: 1px solid black;*/
 	padding: 20px;
 	background-color: #C2BEBD;
 }
@@ -7,6 +7,6 @@ body {
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 30%;
     border-radius: 50%;
 }
