@@ -10,7 +10,8 @@ import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { ParticlesModule } from 'angular-particle';
+ 
 
 @NgModule({
   declarations: [
@@ -20,11 +21,13 @@ import { ContactComponent } from './contact/contact.component';
     ContentComponent,
     FooterComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ParticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
