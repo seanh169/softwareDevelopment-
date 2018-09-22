@@ -1,34 +1,52 @@
+/*@media (min-width: 320px) and (max-width: 600px) {
+    h1 {
+      color: fuchsia;
+    }
+    #image{
+        width: 20%;
+        height: 20%;
+        position: absolute;
+        left: 25%;
+        top: 75%;
+    }
+    .desc:after {
+      content:" In fact, it's between 500px and 600px wide.";
+    }
+  }
+*/
+
 body {
 	height: 50%;
 	padding: 20px;
 	background-color: #3D3D3D;
 }
-.image {
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
+#image {
     border-radius: 50%;
-    /*overflow: hidden;*/
-    position: absolute;
-
-    top: 15%;
-    right: 35%;
+    height: auto;
 }
 .particles canvas{
     position: absolute;
     width: 100%;
-    height: 20%;
+    height: 50%;
     z-index: -1;
+    /*background-image: url('https://pixabay.com/en/geometric-background-cyber-security-2675011/');*/
 
 }
 
-.particles { 
 
-    height: 50%;
+h1 { 
+    /*z-index: 1;*/
+    /*position: absolute;*/
+    /*top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);*/
+    color: #F0F0F0;
+
+ 
+ }
+ p {
+    color: #F0F0F0;
+   z-index: 1;
 
  }
-.imageContainer img {
-    width: 100%;
-    float: left;
-}
