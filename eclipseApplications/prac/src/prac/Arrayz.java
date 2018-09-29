@@ -1,11 +1,16 @@
 package prac;
 
 import java.util.Arrays;
-import java.util.Scanner;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
 
 public class Arrayz {
+	String b = new String();
+	String c = new String();
+//	Stack stack = new Stack();
+//	Queue<Character> queue = new LinkedList();
 	
-
 	
 //	public static void main(String[] args) {
 //		Scanner in = new Scanner(System.in);
@@ -25,13 +30,22 @@ public class Arrayz {
 //		in.close();
 //		
 //	}
-	public static void main(String[] args) {
-		String z = new String("Snna");
-		z = z.toLowerCase();
-		String y = "";
-		for(int i=z.length()-1; i>=0; i--) {
-			y = y + z.charAt(i);
+	
+	void isPalindrome(String a) {
+		for(int i = 0; i<a.length(); i++) {
+			b = b + a.charAt(i);
 		}
-		System.out.println(z.equals(y));
+		for(int i = a.length()-1; i >=0; i--) {
+			c = c + a.charAt(i);
+		}
+		System.out.println(b.equals(c));
+		
+	}
+	public static void main(String[] args) {
+//		String z = new String("Hello");
+		Arrayz x = new Arrayz();
+		x.isPalindrome("sean");
+		
+		
 	}
 }
