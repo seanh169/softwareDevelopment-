@@ -18,7 +18,6 @@ const mongoose = require('mongoose'),
 	}, 
 	addTask: function(req, res){
 		// console.log();
-		console.log('yo');
 		var task = new Tasks({title: req.params.taskTitle, description: req.params.taskDescription});task.save();res.redirect('/')
 
 	},
