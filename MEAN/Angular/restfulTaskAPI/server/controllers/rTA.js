@@ -31,7 +31,7 @@ const mongoose = require('mongoose'),
 
 	})},
 	remove: function(req, res){Tasks.deleteOne({ _id: req.params.id}, function(err){});res.redirect('/')},
-	update: function(req, res){Tasks.findOneAndUpdate({ _id: req.params.id}, {$set: {title: req.params.newTitle, description: req.params.newDesc}}, function(err){}); res.redirect('/')},
+	update: function(req, res){Tasks.findOneAndUpdate({ _id: req.params.id}, {$set: {title: req.params.newTitle, description: req.params.newDesc}}, function(err){});res.redirect('/')},
 
 }
 
