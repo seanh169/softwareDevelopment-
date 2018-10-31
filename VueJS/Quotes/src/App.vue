@@ -39,7 +39,7 @@
         methods: {
         	newQuote(quote){
         		if(this.quotes.length >= this.maxQuotes){
-        			return alert('Please Delete Quotes First!');
+        			return alert('Before adding anymore Quotes, you must remove a Quote! You can only have a maximum of 10 Quotes!');
         		}
         		this.quotes.push(quote);
         	},
