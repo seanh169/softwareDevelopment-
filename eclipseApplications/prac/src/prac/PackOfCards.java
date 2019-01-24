@@ -17,10 +17,10 @@ public class PackOfCards {
 	
 	private Card cardSet[];
 	
-	
-	public PackOfCards() {
-		this.cardSet = new Card[52];
-		for(int i=0; i < )
-	}
+//	
+//	public PackOfCards() {
+//		this.cardSet = new Card[52];
+//		for(int i=0; i < )
+//	}
 
 }

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class FinalProject {
+public class FinalProjectOne {
 	
 	
 
@@ -15,7 +15,7 @@ public class FinalProject {
 		BufferedReader inputStream = null;
 		List<List<String>> lines = new ArrayList<>();
 		
-		ArrayList<USCrimeClass> crimeObjects = new ArrayList<USCrimeClass>();
+		ArrayList<USCrimeClassOne> crimeObjects = new ArrayList<USCrimeClassOne>();
 
         String fileLine;
         try {
@@ -44,7 +44,7 @@ public class FinalProject {
             		
             		
             }
-            USCrimeClass z = new USCrimeClass();
+            USCrimeClassOne z = new USCrimeClassOne();
             
 //            System.out.println(crimeObjects);
 //            System.out.println(lines);
@@ -78,6 +78,6 @@ public class FinalProject {
 
 	}
 	
-	public FinalProject() {}
+	public FinalProjectOne() {}
 
 }
