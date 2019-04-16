@@ -2,10 +2,11 @@
   <div id="app">
 
     <div id="wrapper">
-      
-      <box color="yellow" />
-      <box color="green" />
-      <box color="red" />
+      <Form></Form>
+      <Results v-if="show"></Results>
+      <!-- <box color="yellow" /> -->
+      <!-- <box color="green" /> -->
+      <!-- <box color="red" /> -->
     </div>
     <!-- <HelloWorld v-if="this.show" msg="Welcome to Your Vue.js App"/> -->
   </div>
@@ -14,6 +15,8 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import box from './components/Box.vue';
+import Form from './components/Form.vue';
+import Results from './components/ResultsPanel.vue';
 
 export default {
   name: 'app',
@@ -25,7 +28,8 @@ export default {
   
     
   components: {
-    box
+    // box,
+    Form, Results
   }
 }
 </script>
