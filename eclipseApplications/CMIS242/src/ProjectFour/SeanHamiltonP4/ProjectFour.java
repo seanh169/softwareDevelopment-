@@ -1,4 +1,4 @@
-package ProjectFour;
+package ProjectFour.SeanHamiltonP4;
 
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
