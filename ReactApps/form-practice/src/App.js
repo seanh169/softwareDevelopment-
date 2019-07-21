@@ -1,6 +1,5 @@
 import React from 'react';
-
-import './App.css';
+// import './App.css';
 import FormPrac from './components/FormPrac/FormPrac';
 
 function App() {
