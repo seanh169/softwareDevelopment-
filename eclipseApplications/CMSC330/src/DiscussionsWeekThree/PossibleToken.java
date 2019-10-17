@@ -1,0 +1,10 @@
+package DiscussionsWeekThree;
+
+public enum PossibleToken {
+	
+	COMMA, COLON, SEMICOLON, PERIOD, LEFT_PAREN, RIGHT_PAREN,
+	BUTTON, END, LAYOUT, PANEL, RADIO, TEXTFIELD, WINDOW,
+    STRING, NUMBER, EOF,
+    FLOW, GRID, GROUP, LABEL,
+    
+ };
