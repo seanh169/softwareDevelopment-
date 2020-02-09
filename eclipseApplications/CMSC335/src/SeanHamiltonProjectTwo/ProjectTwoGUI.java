@@ -9,7 +9,10 @@ import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+<<<<<<< HEAD
 import java.util.ArrayList;
+=======
+>>>>>>> dedebb2cb82478232cfd1e04875b1d322c4c2cdc
 
 import javax.imageio.ImageIO;
 import javax.swing.ButtonGroup;
