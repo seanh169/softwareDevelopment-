@@ -20,6 +20,17 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 
+/**
+ * 
+ * 
+ * File Name : ProjectTwoGUI.java
+ * Author : Sean Hamilton
+ * Date: 02/04/2020
+ * Purpose of program: Holds the GUI constructor and all necessary event listeners, buttons, and error handling per project requirements. 
+ * 
+ *
+ */
+
 public class ProjectTwoGUI extends JFrame {
 	
 	
@@ -54,6 +65,7 @@ public class ProjectTwoGUI extends JFrame {
 		bg.add(coneButton);
 		bg.add(cylinderButton);
 		bg.add(torusButton);
+		
 		JPanel panel = new JPanel();
 		panel.setLayout(new GridLayout(6,1));
 		panel.add(selectShape);
