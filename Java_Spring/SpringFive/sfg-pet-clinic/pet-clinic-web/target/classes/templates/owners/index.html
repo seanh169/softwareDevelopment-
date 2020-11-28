@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Pet Owners</title>
+</head>
+<body>
+    <!---/*@thymesVar id="owner" type="com.petclinic.sfgpetclinic.model.Owner*/-->
+    <h1 th:text="'List of Owners'"></h1>
+
+    <table style="border: 1px solid black">
+        <thead>
+        <tr>
+            <th>Owner ID</th>
+            <th>Owner First Name</th>
+            <th>Owner Last Name</th>
+        </tr>
+        </thead>
+        <tr th:each="owner : ${owners}">
+            <td th:text="${owner.id}"></td>
+            <td th:text="${owner.firstName}"></td>
+            <td th:text="${owner.lastName}"></td>
+        </tr>
+    </table>
+</body>
+</html>
