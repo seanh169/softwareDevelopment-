@@ -3,6 +3,9 @@ package com.recipeproject.recipe.domain;
 import javax.persistence.*;
 import java.util.Set;
 
+/**
+ * Created by jt on 6/13/17.
+ */
 @Entity
 public class Category {
 
@@ -12,7 +15,7 @@ public class Category {
     private String description;
 
     @ManyToMany(mappedBy = "categories")
-    private Set<Recipe> recipe;
+    private Set<Recipe> recipes;
 
     public Long getId() {
         return id;
@@ -30,11 +33,11 @@ public class Category {
         this.description = description;
     }
 
-    public Set<Recipe> getRecipe() {
-        return recipe;
+    public Set<Recipe> getRecipes() {
+        return recipes;
     }
 
-    public void setRecipe(Set<Recipe> recipe) {
-        this.recipe = recipe;
+    public void setRecipes(Set<Recipe> recipes) {
+        this.recipes = recipes;
     }
 }
